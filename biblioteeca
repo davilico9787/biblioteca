@@ -1,0 +1,35 @@
+libros = [
+    ("El principito", 1943, True),
+    ("Dune", 1965, False),
+    ("Python para todos", 2022, True),
+    ("Aprende Django", 2024, True)
+]
+
+print(libros)
+print(len(libros))
+print(libros[0])
+print(libros[0][0])
+
+
+for libro in libros:
+    print(libro)
+
+
+for titulo, anio, disponible in libros:
+    print(titulo)
+    print(anio)
+    print(disponible)
+    print()  # Separador entre libros
+    print("-----")  # Línea separadora entre libros
+
+
+frutas = ["manzana golden", "banana canarias", "naranja valenciana"]
+
+for fruta in frutas:
+    print(fruta)
+
+    #modifica un programa exclusivamente para mostras los titulos de los libros disponibles
+
+    for titulo, anio, disponible in libros:
+    if disponible:
+        print(titulo)
